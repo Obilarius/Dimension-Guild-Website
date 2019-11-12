@@ -1,1 +1,59 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+body {
+  background: #240414;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  background: #240414b9;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+header .container .brand {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+
+header .container .brand img {
+  width: 150px;
+}
+
+header .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container nav ul li a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+header .container nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+/*# sourceMappingURL=main.css.map */
