@@ -1,6 +1,5 @@
 Live Server
 Prettier
 
-
 Net Ninja Kurse
 https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G
