@@ -17,7 +17,8 @@ body {
 header {
   width: 100%;
   background: #240414b9;
-  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 10;
 }
 
 header .container {
@@ -33,7 +34,7 @@ header .container {
 header .container .brand {
   position: absolute;
   left: 0px;
-  top: 10px;
+  top: -15px;
 }
 
 header .container .brand img {
@@ -55,5 +56,83 @@ header .container nav ul li a {
 
 header .container nav ul li a:hover {
   background: rgba(255, 255, 255, 0.1);
+}
+
+section#hero {
+  background-image: url("../img/wow_wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+section#hero iframe,
+section#hero video {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+section#hero h1 {
+  font-size: 5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: bold;
+  text-shadow: 10px 0px 30px black, 0px 10px 30px black, 0px -10px 30px black, -10px 0px 30px black;
+}
+
+section#hero .scrollwheel {
+  position: absolute;
+  bottom: 7%;
+  right: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 30px;
+  height: 70px;
+  border-radius: 15px;
+  border: 5px solid white;
+}
+
+section#hero .scrollwheel .animated {
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  bottom: -10px;
+  -webkit-animation: 1s linear infinite scrollwheel;
+          animation: 1s linear infinite scrollwheel;
+}
+
+@-webkit-keyframes scrollwheel {
+  0% {
+    bottom: -10px;
+  }
+  30% {
+    bottom: -30px;
+  }
+  100% {
+    bottom: -10px;
+  }
+}
+
+@keyframes scrollwheel {
+  0% {
+    bottom: -10px;
+  }
+  30% {
+    bottom: -30px;
+  }
+  100% {
+    bottom: -10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
