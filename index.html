@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dimension Guild</title>
 
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -38,7 +42,7 @@
         <div class="animated"></div>
       </div>
     </section>
-    <section id="about">
+    <section id="about" class="container">
       <img src="./img/dimension_big.webp" alt="" />
       <div>
         <h2>Über Dimension</h2>
@@ -53,87 +57,137 @@
       </div>
     </section>
     <section id="leader">
-      <div>
-        <div>
-          <img src="http://lorempixel.com/200/200" alt="" />
-          <h3>Name</h3>
-          <p>Abteilung</p>
+      <div class="container">
+        <div class="leader-list">
+          <div>
+            <div
+              class="avatar"
+              style="background-image: url(https://i.pravatar.cc/300)"
+            ></div>
+            <h3>Name</h3>
+            <p>Abteilung</p>
+          </div>
+          <div>
+            <div
+              class="avatar"
+              style="background-image: url(https://i.pravatar.cc/310)"
+            ></div>
+            <h3>Name</h3>
+            <p>Abteilung</p>
+          </div>
+          <div>
+            <div
+              class="avatar"
+              style="background-image: url(https://i.pravatar.cc/320)"
+            ></div>
+            <h3>Name</h3>
+            <p>Abteilung</p>
+          </div>
+          <div>
+            <div
+              class="avatar"
+              style="background-image: url(https://i.pravatar.cc/330)"
+            ></div>
+            <h3>Name</h3>
+            <p>Abteilung</p>
+          </div>
         </div>
-        <div>
-          <img src="http://lorempixel.com/200/200" alt="" />
-          <h3>Name</h3>
-          <p>Abteilung</p>
-        </div>
-        <div>
-          <img src="http://lorempixel.com/200/200" alt="" />
-          <h3>Name</h3>
-          <p>Abteilung</p>
-        </div>
-        <div>
-          <img src="http://lorempixel.com/200/200" alt="" />
-          <h3>Name</h3>
-          <p>Abteilung</p>
-        </div>
+
+        <button id="raidkader">Der komplette Raidkader</button>
       </div>
-      <button id="raidkader">Der komplette Raidkader</button>
     </section>
-    <section id="youtube">
-      <div>TODO: Youtube Video</div>
-      <div>TODO: Youtube Video</div>
-      <div>TODO: Youtube Video</div>
+    <section id="youtube" class="container">
+      <div>
+        <iframe
+          src="https://www.youtube.com/embed/3WP-nBMjPMU"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div>
+        <iframe
+          src="https://www.youtube.com/embed/3WP-nBMjPMU"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div>
+        <iframe
+          src="https://www.youtube.com/embed/3WP-nBMjPMU"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
     </section>
     <section id="canditature">
-      <h1>Bewirb dich bei Dimension</h1>
-      <p>
-        Die Gilde "Dimension" sucht für Ihren Mythic Raidkader noch engagierte
-        und aktive Spieler
-      </p>
-      <div class="raidtimes">
-        <div>Raidzeiten:</div>
-        <ul>
-          <li>Mittwoch: 19:30 Uhr - 23:00 Uhr (Mythic)</li>
-          <li>Donnerstag: 19:30 Uhr - 23:00 Uhr (HC-Farmraid | Sellruns)</li>
-          <li>Montag: 19:30 Uhr - 23:00 Uhr (Mythic)</li>
-        </ul>
-        <div>
-          Zu Beginn eines Contents werden wir die ersten 2-3 ID´s alle 3 Tage
-          raiden.
+      <div class="container">
+        <h1>Bewirb dich bei Dimension</h1>
+        <p>
+          Die Gilde "Dimension" sucht für Ihren Mythic Raidkader noch engagierte
+          und aktive Spieler
+        </p>
+        <div class="raidtimes">
+          <div class="header">Raidzeiten:</div>
+
+          <div class="table">
+            <div>Mittwoch:</div>
+            <div>19:30 Uhr - 23:00 Uhr</div>
+            <div>(Mythic)</div>
+
+            <div>Donnerstag:</div>
+            <div>19:30 Uhr - 23:00 Uhr</div>
+            <div>(HC-Farmraid | Sellruns)</div>
+
+            <div>Montag:</div>
+            <div>19:30 Uhr - 23:00 Uhr</div>
+            <div>(Mythic)</div>
+          </div>
+
+          <div>
+            Zu Beginn eines Contents werden wir die ersten 2-3 ID´s alle 3 Tage
+            raiden.
+          </div>
         </div>
-      </div>
-      <div class="wyg">
-        <div>Was wir bieten:</div>
+        <div class="wyg">
+          <div class="header">Was wir bieten:</div>
+          <ul>
+            <li>Ein effizientes Raidumfeld</li>
+            <li>Eine starke und erfahrene Gildenleitung</li>
+            <li>Sich stetig verbessernder Progress</li>
+            <li>
+              Eine regelmäßige Auswertung deiner Performance und sachliche
+              Kritik
+            </li>
+            <li>Raidversorgung über Gildenbank (Flask,Bufffood)</li>
+            <li>
+              Einen immer dem Content entsprechender Raidkader
+              (Weiterentwicklung)
+            </li>
+            <li>Mythic+ sowie Farmraids für Mains ggf Twinks im HC und NHC</li>
+          </ul>
+        </div>
+        <div class="wyb">
+          <ul>
+            <li>Alter: 18+</li>
+            <li>nahezu 100% attendence zu den Progresszeiten</li>
+            <li>Motivation und Eigeninitiative</li>
+            <li>Umgang mit Warcraftlogs,Raidbots,Simtools etc.</li>
+            <li>Respektvollen Umgang mit deinem Umfeld</li>
+            <li>Raidvorbereitungen (Guides, maximale Enchants & Gems)</li>
+            <li>Kritikfähigkeit und diese auch konstruktiv zu äußern</li>
+            <li>HoA mindestens auf Level 65</li>
+          </ul>
+          <div class="header">Was wir fordern:</div>
+        </div>
+        <div>Wenn Ihr Interesse habt, meldet euch bei uns!</div>
         <ul>
-          <li>Ein effizientes Raidumfeld</li>
-          <li>Eine starke und erfahrene Gildenleitung</li>
-          <li>Sich stetig verbessernder Progress</li>
-          <li>
-            Eine regelmäßige Auswertung deiner Performance und sachliche Kritik
-          </li>
-          <li>Raidversorgung über Gildenbank (Flask,Bufffood)</li>
-          <li>
-            Einen immer dem Content entsprechender Raidkader (Weiterentwicklung)
-          </li>
-          <li>Mythic+ sowie Farmraids für Mains ggf Twinks im HC und NHC</li>
+          <li>Recruitment - Zux (Zux#21788)</li>
+          <li>Gildenleitung - Loudmage (LoudCrowd#2575)</li>
         </ul>
       </div>
-      <div class="wyb">
-        <div>Das solltet Ihr mitbringen:</div>
-        <ul>
-          <li>Alter: 18+</li>
-          <li>nahezu 100% attendence zu den Progresszeiten</li>
-          <li>Motivation und Eigeninitiative</li>
-          <li>Umgang mit Warcraftlogs,Raidbots,Simtools etc.</li>
-          <li>Respektvollen Umgang mit deinem Umfeld</li>
-          <li>Raidvorbereitungen (Guides, maximale Enchants & Gems)</li>
-          <li>Kritikfähigkeit und diese auch konstruktiv zu äußern</li>
-          <li>HoA mindestens auf Level 65</li>
-        </ul>
-      </div>
-      <div>Wenn Ihr Interesse habt, meldet euch bei uns!</div>
-      <ul>
-        <li>Recruitment - Zux (Zux#21788)</li>
-        <li>Gildenleitung - Loudmage (LoudCrowd#2575)</li>
-      </ul>
     </section>
   </body>
 </html>
